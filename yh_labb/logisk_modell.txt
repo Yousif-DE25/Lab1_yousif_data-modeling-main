@@ -1,0 +1,40 @@
+Logisk modell - YrkesCo
+
+Program
+- Ett program representerar en utbildning
+- Ett program kan ha en eller tre klasser
+- Ett program har bara en utbildningsledare
+
+Klass 
+- En klass tillhör exakt ett program
+- En klass kan ha en eller flera studenter
+- En klass har en eller flera kurser
+
+Kurs 
+- En kurs kan ingå i en eller flera klasser
+- En kurs undervisas av en utbildare
+
+Student 
+- En student tillhör en klass
+- En student har en uppsättning personuppgifter
+
+Utbildare 
+- En utbildare kan undervisa i en eller flera kurser
+- En utbildare kan vara konsult eller fast anställd
+- En utbildare har en uppsättning personuppgifter
+
+Utbildningsledare
+- En utbildningsledare har ansvar för ett program
+- En utbildningsledare har en uppsättning personuppgifter
+
+Konsult 
+- En konsult är kopplad til en utbildare
+- En konsult tillhör ett företag
+
+Företag 
+- Ett företag kan ha en eller flera konsulter 
+- Företaget innehåller företagsinformation, till exempel F-skatt och organisationsnummer
+
+Personuppgifter 
+- Personuppgifter lagras separat på grund av känslig information
+- En uppsättning personuppgifter tillhör alltid exakt en person

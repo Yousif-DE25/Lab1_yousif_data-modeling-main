@@ -1,0 +1,41 @@
+Relationship statments - YrkesCo
+
+Program -< Klass 
+- Ett program har en eller tre klasser (1:3)
+- En eller tre klasser tillhör ett program (3:1)
+
+Utbildningsledare - Program
+- En utbildningsledare har ansvar för ett program (1:1)
+- En program har en utbildningsledare (1:1)
+
+Program -< Kurs 
+- En kurs undervisas av en utbildare (M:1)
+- En utbildare kan undervisa i en eller flera kurser(1:M)
+
+Klass -< Student 
+- En klass tillhör en eller flera studenter (1:M)
+- En student tillhör en klass (M:1)
+
+Utbildare >-< Kurs
+- En utbildare tillhör en eller flera kurser (M:M)
+- En kurs kan ingå i flera eller en utbildare (M:M)
+
+Student - Personuppgifter
+- En student har sina egna personuppgifter (1:1)
+- Personuppgifterna tillhör exakt en student (1:1)
+
+Utbildningsledare - Personuppgifter
+- En utbildningsledare har sina egna personuppgifter (1:1)
+- Personuppgifterna tillhör exakt en utbildningsledare (1:1)
+
+Utbildare - Personuppgifter
+- En utbildare har sina egna personuppgifter (1:1)
+- Personuppgifterna tillhör exakt en utbildare (1:1)
+
+Konsult - Utbildare
+- En konsult är en utbildare (1:1)
+- En utbildare kan vara konsult eller fast anställd (1:1)
+
+Företag -< Konsult
+- Ett företag kan ha en eller flera konsulter (1:M)
+- En konsult tillhör ett företag (M:1)

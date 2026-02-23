@@ -1,24 +1,15 @@
 
-SELECT 
-    k.klassnamn, 
-    u.förnamn, 
-    u.efternamn
+SELECT k.klassnamn, u.förnamn, u.efternamn
 FROM klass k 
 JOIN utbildningsledare u 
     ON k.utbildningsledare_id = u.utbildningsledare_id;
 
-SELECT 
-    s.förnamn, 
-    s.efternamn, 
-    k.klassnamn
+SELECT s.förnamn, s.efternamn, k.klassnamn
 FROM student s 
 JOIN klass k 
     ON s.klass_id = k.klass_id;
 
-SELECT 
-    ku.kursnamn
-    u.förnamn
-    u.efternamn
+SELECT ku.kursnamn, u.förnamn,u.efternamn
 FROM kurs ku
 JOIN kurs_utbildare ku_u 
     ON ku.kurs_id = ku_u.kurs_id

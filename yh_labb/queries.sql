@@ -33,10 +33,7 @@ JOIN kurs_utbildare ku_u
     ON ku.kurs_id = ku_u.kurs_id
 GROUP BY ku.kursnamn;
 
-SELECT 
-    u.förnamn
-    u.efternamn
-    ku.kursnamn
+SELECT u.förnamn, u.efternamn, ku.kursnamn
 FROM utbildare u
 JOIN kurs_utbildare ku_u
     ON u.utbildare_id = ku_u.utbildare_id
